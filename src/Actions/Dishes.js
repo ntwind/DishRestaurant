@@ -13,7 +13,7 @@ export function DishesFetchInProgress() {
 
 export function DishesFetchSuccess(payload) {
     return {
-        type: DISHES_FETCH_START,
+        type: DISHES_FETCH_SUCCESS,
         payload:payload
     }
 }
@@ -27,6 +27,7 @@ export function DishesFetchError(errorMsg) {
 
 export function fetchDishes(page, qtu) {
     return (dispatch) => {
+
         return  getDishesApiCall(page, qtu).then(res => {
             dispatch(DishesFetchSuccess(res));
         });

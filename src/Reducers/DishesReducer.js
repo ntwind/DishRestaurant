@@ -6,7 +6,7 @@ import {
 
 const initialState = {
     dishes: [],
-    loadingDataInProgress: true,
+    loadingDataInProgress: false,
     errorMsg: false
 };
 
@@ -17,7 +17,7 @@ function dishesReducer(state = initialState, action) {
             return {...state, loadingDataInProgress: true};
 
         case DISHES_FETCH_SUCCESS:
-            return {dishes: [...this.dishes], errorMsg: void 0, loadingDataInProgress: false};
+            return {dishes: [...state.dishes, ...action.payload], errorMsg: void 0, loadingDataInProgress: false};
 
         case DISHES_FETCH_ERROR:
             return {...state, errorMsg: action.payload};

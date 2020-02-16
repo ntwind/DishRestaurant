@@ -4,6 +4,7 @@ export function getDishes(page, qtu) {
         setTimeout( () => {
             resolve( new Array(9).fill(
                     {
+                        img: './img1.png',
                         title: 'Roasted Butternut Pumkin, Shiitake NMushroom and Haluomi Salad',
                         descr: 'A hearty mix of fresh greensm, roasted vegetables and golden haluomi makes up this tasty winter salad.',
                         ingredients: 'meat',
@@ -13,6 +14,6 @@ export function getDishes(page, qtu) {
                     }
                 )
             );
-        }, 3000);
+        }, 300);
     })
 }
