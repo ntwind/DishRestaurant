@@ -1,6 +1,9 @@
 ## How to run
 
 In the project directory, you can run:
+### `npm install`
+
+this will install dependencies, then 
 
 ### `npm start`
 
