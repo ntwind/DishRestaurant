@@ -4,11 +4,32 @@
 .tile {
   width: 300px;
   height: 450px;
-  border: 1px solid purple;
   margin: 13px;
   border-radius: 5px;
+  background-color: $cl_white;
 
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  img {
+    display: block;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+  }
+
+  .tile-cotent {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 250px;
+    padding: 22px;
+    text-align: left;
+  }
+  .descr {
+    font-size: 14px;
+    height: 48px;
+    overflow: hidden;
+    margin-bottom: 10px;
   }
 }

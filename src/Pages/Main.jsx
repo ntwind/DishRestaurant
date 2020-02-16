@@ -4,6 +4,7 @@ import {fetchDishes} from '../Actions/Dishes'
 import Tile from '../Widgets/Tile'
 import './Main.scss'
 
+
 export default function MainPage() {
     const dishes = useSelector(state => state.dishes.dishes);
     const loadingInProgress = useSelector(state => state.dishes.loadingDataInProgress);
