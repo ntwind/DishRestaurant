@@ -1,0 +1,14 @@
+@import '../Styles/colors';
+@import '../Styles/typography';
+
+.tile {
+  width: 300px;
+  height: 450px;
+  border: 1px solid purple;
+  margin: 13px;
+  border-radius: 5px;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+}
